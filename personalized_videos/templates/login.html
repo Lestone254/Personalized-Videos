@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- bootstrap links goes here -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/mdb.min.css">
+
+    <!-- fontawesome css lins goes here -->
+    <link rel="stylesheet" href="./assets/css/all.css">
+
+    <!-- owl carousel css links goes here -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <!-- main stylesheet link goes here -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- header begins here -->
+        <header id="header" class="py-3 mb-5 position-relative">
+            <!-- navbar menu begins here -->
+            <nav class="nav d-flex justify-content-between align-items-center mb-5">
+                <!-- menu -->
+                <div id="menu-bars" class="menu-bars d-flex align-items-center flex-row">
+                    <span class="me-1 menu-bar">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <span class="d-none d-md-block">Menu</span>
+                </div>
+
+                <!-- logo -->
+                <div class="log-div">
+                    <span>
+                        <img src="./assets/images/Artboard 1@4x.png" alt="logo" height="35px" width="70px">
+                    </span>
+                </div>
+
+                <!-- search and user profile -->
+                <div class="search-profile d-flex flex-row align-items-center">
+                    <!-- search -->
+                    <span class="d-none d-md-block me-4">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fas fa-search"></i>
+                            <span class="ms-1">Search</span>
+                        </a>
+                    </span>
+                    <!-- profile -->
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle d-flex align-items-center hidden-arrow" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/image-3.jpeg" alt="Profile Picture" height="25" width="25" class="rounded-circle" loading="lazy">
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                <li>
+                                    <a href="#" class="dropdown-item"><i class="far fa-user me-1"></i> My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"><i class="fas fa-cog me-1"></i>Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"><i class="fas fa-sign-out me-1"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- navbar menu ends here -->
+
+            <!-- sidebar menu goes here -->
+            <div class="side-bar side-hide px-3 shadow" id="side-bar">
+                <div class="py-3 d-flex justify-content-between align-items-center mb-3">
+                    <span class="d-block">
+                        <img src="./assets/images/Artboard 1@4x.png" alt="logo" height="35px" width="70px">
+                    </span>
+
+                    <span id="close-icon" class="d-block close-icon">
+                        <i class="fas fa-close"></i>
+                    </span>
+                </div>
+
+                <!-- links -->
+                <div class="d-flex flex-column">
+                    <a href="#" class="side-link mb-3">Log In</a>
+                    <a href="#" class="side-link mb-3">For business</a>
+                    <a href="#" class="side-link mb-3">Enrol as profile</a>
+                    <a href="#" class="side-link mb-3">Blog</a>
+                    <a href="#" class="side-link mb-3">Help & Contact</a>
+                </div>
+                <hr>
+                <!-- links -->
+                <div class="d-flex flex-column mt-2">
+                    <span class="d-block mb-3 text-muted">Find talents</span>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-bolt me-1"></i>24hr Delivery</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-football me-1"></i>Sports</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="far fa-star me-1"></i>Actor</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-film me-1"></i>Personality</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="far fa-smile me-1"></i>Comedian</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-microphone me-1"></i>Musician</a>
+                </div>
+            </div>
+            <!-- sidebar menu ends here -->
+
+            <!-- header banner begins here -->
+            <div class="container header-banner">
+                <span class="h4 d-block text-center text-uppercase pt-4 pb-1 my-4">
+                    Login
+                </span>
+                <form action="#" method="post" name="login-form" class="d-flex justify-content-center mt-5 login-form" id="login-form">
+                    <div class="row">
+                        <div class="col-12 mb-3 position-relative">
+                            <label for="login-email" class="d-none"></label>
+                            <input type="email" name="login-email" class="d-block" id="login-email" placeholder="Enter email" required>
+                            <span class="d-block login-icon">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                        </div>
+                        <div class="col-12 mb-2 position-relative">
+                            <label for="login-psw" class="d-none"></label>
+                            <input type="password" name="login-psw" class="d-block" id="login-email" placeholder="Enter password" required>
+                            <span class="d-block login-icon">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                            <span id="showpsw" class="showpsw">
+                                show password
+                            </span>
+                        </div>
+                        <div class="col-12 mb-3 d-flex justify-content-between justify-items-center">
+                            <a href="#" class="d-block text-start">
+                                Forgot password?
+                            </a>
+                            <span class="d-block text-end">
+                                Don't have an account?
+                                <a href="#" class="text-start">Sign up</a>
+                            </span>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button type="submit" class="btn btna text-white">Login</button>
+                        </div>
+                        <div class="col-12 mb-3">
+                           
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- header banner ends here -->
+        </header>
+        <!-- header ends here -->
+    </div>
+
+    <!-- footer begins here -->
+    <div class="container-fluid bg-dark py-3">
+        <footer>
+            <div class="row mb-3">
+                <div class="col-lg-6 col-12 pt-3 pb-4 pb-md-3">
+                    <span class="d-block py-1 text-white text-start h5">
+                        Sign up to get our newsletter
+                    </span>
+    
+                    <p class="py-1 text-white">
+                        Get real-time update and offers from zooka. Subscribe to get 10% off your next order.
+                    </p>
+    
+                    <form action="#" method="post" class="d-block email-form" id="email-form" name="email-form">
+                        <div class="d-flex flex-row align-items-center">
+                            <label for="subEmail" class="d-none"></label>
+                            <input type="email" id="subEmail" name="subEmail" class="subEmail" placeholder="Your e-mail" required>
+                            <button type="submit" class="btn btna">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-12 py-3">
+                    <a href="#" class="btn btn-outline-white btn-block mb-2">
+                        Enrol as talent
+                    </a>
+    
+                    <div class="d-flex flex-column">
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            For business
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            About us 
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            Blog
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            FAQ
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            Help & contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="#" class="d-block text-white">
+                        zoooka.me
+                    </a>
+
+                    <div class="d-flex align-items-center flex-row">
+                        <a href="#" class="text-white me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-2">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-row">
+                        <a href="#" class="text-muted d-block me-3">
+                            Privacy policy
+                        </a>
+                        <a href="#" class="text-muted d-block">
+                            Terms of service
+                        </a>
+                    </div>
+                    <span class="d-block text-white">
+                        &copy; 2022 Zooka
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- footer ends here -->
+   
+    
+    <!-- jqeuery script link here -->
+    <script src="./assets/js/jquery.js"></script>
+
+    <!-- bootsrap script link goes here -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/mdb.min.js"></script>
+
+    <!-- fontawesome script link goes here -->
+    <script src="./assets/js/all.js"></script>
+
+    <!-- owl carousel script goes here -->
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+    <!-- main script file link here -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

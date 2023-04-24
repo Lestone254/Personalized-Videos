@@ -1,0 +1,1371 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zooka</title>
+
+    <!-- bootstrap links goes here -->
+    <link rel="stylesheet" href="{%static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/mdb.min.css'%}">
+
+    <!-- fontawesome css lins goes here -->
+    <link rel="stylesheet" href="{%static 'assets/css/all.css'%}">
+
+    <!-- owl carousel css links goes here -->
+    <link rel="stylesheet" href="{%static 'assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/owl.theme.default.min.css'%}">
+
+    <!-- main stylesheet link goes here -->
+    <link rel="stylesheet" href="{%static 'assets/css/style.css'%}">
+</head>
+<body>
+
+    <div class="px-2">
+        <!-- header begins here -->
+        <header id="header" class="py-3 mb-2">
+            <!-- navbar menu begins here -->
+            <nav class="nav d-flex justify-content-between align-items-center mb-5">
+                <!-- menu -->
+                <div id="menu-bars" class="menu-bars d-flex align-items-center flex-row">
+                    <span class="me-1 menu-bar">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <span class="d-none d-md-block menu-title">Menu</span>
+                </div>
+
+                <!-- logo -->
+                <div class="log-div">
+                    <span>
+                        <img src="./assets/images/Artboard 1@4x.png" alt="logo" height="35px" width="70px">
+                    </span>
+                </div>
+
+                <!-- search and user profile -->
+                <div class="search-profile d-flex flex-row align-items-center px-4">
+                    <!-- search -->
+                    <span class="d-none d-md-block me-4">
+                        <a href="#" class="text-decoration-none search-link">
+                            <i class="fas fa-search"></i>
+                            <span class="ms-1">Search</span>
+                        </a>
+                    </span>
+                    <!-- profile -->
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle d-flex align-items-center hidden-arrow" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <img src="{%static 'assets/images/image-3.jpeg'%}" alt="Profile Picture" height="35" width="35" class="rounded-circle border-secondary" loading="lazy">
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                <li>
+                                    <a href="#" class="dropdown-item"><i class="far fa-user me-1"></i> My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"><i class="fas fa-cog me-1"></i>Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"><i class="fas fa-sign-out me-1"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- navbar menu ends here -->
+
+            <!-- sidebar menu goes here -->
+            <div class="side-bar side-hide px-3 shadow" id="side-bar">
+                <div class="py-3 d-flex justify-content-between align-items-center mb-3">
+                    <span class="d-block">
+                        <img src="./assets/images/Artboard 1@4x.png" alt="logo" height="35px" width="70px">
+                    </span>
+
+                    <span id="close-icon" class="d-block close-icon">
+                        <i class="fas fa-close"></i>
+                    </span>
+                </div>
+
+                <!-- links -->
+                <div class="d-flex flex-column">
+                    <a href="./login.html" class="side-link mb-3"><i class="fas fa-sign-out me-1"></i> Log In</a>
+                    <a href="#" class="side-link mb-3"><i class="fas fa-dollar-sign me-1"></i> For business</a>
+                    <a href="#" class="side-link mb-3"><i class="far fa-user me-1"></i> Enrol as profile</a>
+                    <a href="#" class="side-link mb-3"><i class="far fa-bookmark"></i> Blog</a>
+                    <a href="#" class="side-link mb-3"><i class="fas fa-question"></i> Help & Contact</a>
+                </div>
+                <hr>
+                <!-- links -->
+                <div class="d-flex flex-column mt-2">
+                    <span class="d-block mb-3 text-muted">Find talents</span>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-bolt me-1"></i>24hr Delivery</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-football me-1"></i>Sports</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="far fa-star me-1"></i>Actor</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-film me-1"></i>Personality</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="far fa-smile me-1"></i>Comedian</a>
+                    <a href="#" class="side-link-btm mb-3"><i class="fas fa-microphone me-1"></i>Musician</a>
+                </div>
+            </div>
+            <!-- sidebar menu ends here -->
+
+
+        </header>
+        <!-- header ends here -->
+
+        <main class="main" id="main">
+                    <!-- header banner begins here -->
+                    <div class="container header-banner">
+                        <span class="h4 d-none d-md-block text-center text-uppercase py-1">
+                            Get Personalized Video Messages From
+                            <br>
+                            Your Favorite Celebrities
+                        </span>
+                        <span class="h4 d-block d-md-none text-center text-uppercase py-1">
+                            Personalized Video Messages
+                            Celebrities
+                        </span>
+                        <span class="d-block text-center">
+                            <button class="btn btna text-white">See Trending Celebs</button>
+                        </span>
+                    </div>
+                    <!-- header banner ends here -->
+                    <!-- trending section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    Trending
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    <span class="d-block">show all</span>
+                    <div class="show-angle">
+                        <span class="first-line"></span>
+                        <span class="second-line"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- trending section ends here -->
+
+        <!-- New & Noteworthy section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    New & Noteworthy
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- New & Noteworthy section ends here -->
+
+        <!-- Featured section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    Featured
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featured section ends here -->
+
+        <!-- banner -->
+        <div class="d-flex flex-column rounded-4 bg-warning px-3 py-4 mb-5">
+            <span class="h5 d-block text-start py-1">
+                Looking for a quick and unique gift available in 24hr?
+            </span>
+
+            <div class="d-flex flex-column flex-md-row">
+                <p>
+                    Many celebrities at zooka are available to record your last-minute gifts.
+                    Book today, select 24hrs delivery at checkout and receive it tomorrow!
+                </p>
+                <span class="d-block text-end">
+                    <a href="#" class="btn btn-outline-dark">
+                        Search here
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!-- banner -->
+
+        <!-- under 5k section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    Under kes 5k
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- under 5k section ends here -->
+
+        <!-- 24hr delivery section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    <i class="fas fa-bolt text-secondary me-1"></i>
+                    24hr Delivery
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 24hr delivery section ends here -->
+
+        <!-- Actors section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    <i class="far fa-star text-secondary me-1"></i>
+                    Actors
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Actors section ends here -->
+
+        <!-- Comedian section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    <i class="far fa-laugh text-secondary me-1"></i>
+                    Comedians
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comedian section ends here -->
+
+        <!-- Under 15k section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    Under kes 15k
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Under 15k section ends here -->
+
+        <!-- Musicians section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    <i class="fas fa-music text-secondary me-1"></i>
+                    Musicians
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Musicians section ends here -->
+
+        <!-- Personalities section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    <i class="fas fa-video-camera text-secondary me-1"></i>
+                    personalities
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Personalities section ends here -->
+
+        <!-- banner -->
+        <div class="d-flex flex-column rounded-4 bg-secondary px-3 py-4 mb-5">
+            <span class="h3 d-block text-start py-1">
+                Need a celebrity to promote your business?
+            </span>
+
+            <div class="d-flex flex-column flex-md-row">
+                <p class="me-5">
+                    Boost your marketing with celebrity videos tailored for your business needs!
+                </p>
+                <span class="d-block ms-5 text-end">
+                    <a href="#" class="btn btn-outline-dark">
+                        Find out more
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!-- banner -->
+        
+        <!-- Sports section begins here -->
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mx-2 mb-4">
+                <span class="d-block h5 text-start">
+                    <i class="fas fa-football text-secondary me-1"></i>
+                    Sports
+                </span>
+                <a href="#" class="d-block py-1 px-3 rounded-pill text-center show-all">
+                    show all
+                </a>
+            </div>
+            <div class="slider owl-carousel owl-theme">
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile d-flex justify-content-between">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                        <span class="d-block">
+                            <i class="fas fa-bolt text-secondary me-1"></i>
+                            24hr
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="cardo">
+                    <div class="img-div rounded">
+                        <img src="./assets/images/image-3.jpeg" alt="Profile Name">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="d-block profile-title">
+                            John Doe
+                        </a>
+                        <span class="d-block sub-title">
+                            Actor - Breaking Good
+                        </span>
+                    </div>
+                    <div class="price-profile">
+                        <span class="d-block text-uppercase">
+                            Kes 
+                            <span class="ms-1">36,882+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sports section ends here -->
+        </main>
+    </div>
+
+    <!-- footer begins here -->
+    <div class="container-fluid bg-dark py-3">
+        <footer>
+            <div class="row mb-3">
+                <div class="col-lg-6 col-12 pt-3 pb-4 pb-md-3">
+                    <span class="d-block py-1 text-white text-start h5">
+                        Sign up to get our newsletter
+                    </span>
+    
+                    <p class="py-1 text-white">
+                        Get real-time update and offers from zooka. Subscribe to get 10% off your next order.
+                    </p>
+    
+                    <form action="#" method="post" class="d-block email-form" id="email-form" name="email-form">
+                        <div class="d-flex flex-row align-items-center">
+                            <label for="subEmail" class="d-none"></label>
+                            <input type="email" id="subEmail" name="subEmail" class="subEmail" placeholder="Your e-mail" required>
+                            <button type="submit" class="btn btna">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-12 py-3">
+                    <a href="#" class="btn btn-outline-white btn-block mb-2">
+                        Enrol as talent
+                    </a>
+    
+                    <div class="d-flex flex-column">
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            For business
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            About us 
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            Blog
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            FAQ
+                        </a>
+                        <a href="#" class="footer-links d-block text-white text-start mb-2">
+                            <i class="fas fa-angle-right me-1"></i>
+                            Help & contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="#" class="d-block text-white">
+                        zoooka.me
+                    </a>
+
+                    <div class="d-flex align-items-center flex-row">
+                        <a href="#" class="text-white me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-2">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-row">
+                        <a href="#" class="text-muted d-block me-3">
+                            Privacy policy
+                        </a>
+                        <a href="#" class="text-muted d-block">
+                            Terms of service
+                        </a>
+                    </div>
+                    <span class="d-block text-white">
+                        &copy; 2022 Zooka
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- footer ends here -->
+   
+    
+    <!-- jqeuery script link here -->
+    <script src="{%static 'assets/js/jquery.js'%}"></script>
+
+    <!-- bootsrap script link goes here -->
+    <script src="{%static 'assets/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="./assets/js/mdb.min.js"></script>
+
+    <!-- fontawesome script link goes here -->
+    <script src="{%static 'assets/js/all.js'%}"></script>
+
+    <!-- owl carousel script goes here -->
+    <script src="{%static 'assets/js/owl.carousel.js'%}"></script>
+    <script src="{%static 'assets/js/owl.carousel.min.js'%}"></script>
+
+    <!-- main script file link here -->
+    <script src="{%static 'assets/js/main.js'%}"></script>
+</body>
+</html>

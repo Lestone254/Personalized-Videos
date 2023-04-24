@@ -1,0 +1,184 @@
+@import url(./fonts.css);
+
+ * {
+  font-family: 'montserrat', sans-serif;
+} 
+
+body {
+  /* background-image: linear-gradient(109.6deg, rgba(119, 44, 232, 0.68) 11.5%, rgb(119, 44, 232) 91.2%);
+  overflow-x: hidden; */
+}
+
+.btna {
+  background-image: linear-gradient(to right, #d7816a, #bd4f6c);
+}
+
+.menu-title {
+  font-family: cursive;
+}
+
+.show-all {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  color: #1d1d1d;
+  border: 1px solid #cecdcd;
+}
+
+.show-all:hover {
+  background-color: #cecdcd;
+  color: #1b1b1b;
+}
+
+.first-line {
+  height: 4px;
+  width: 15px;
+  background: #000;
+}
+
+/* navbar menu styling begins here */
+header {
+  position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 98;
+ background: #ffffff;
+}
+
+header .header-banner {
+  margin-top: 120px;
+}
+
+main{
+  margin-top: 126px;
+}
+
+nav {
+  background: #ffffff;
+  /* min-width: 94%; */
+  height: 12vh;
+  /* position: fixed; */
+  top: 0;
+  z-index: 98;
+}
+
+nav .menu-bar {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.search-profile .search-link {
+  color: #323232;
+}
+
+.search-profile .search-link span {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: lowercase;
+  color: #36454F;
+}
+
+.search-profile .search-link span:hover {
+  color: #898888;
+}
+
+/* navbar menu styling ends here */
+
+/* sidebar style begins here */
+.side-bar {
+  width: 255px;
+  height: 100vh;
+  /* background: #efb4a3; */
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.side-hide {
+  left: -255px;
+  transition: .2s ease-in-out;
+}
+
+.show-sidebar {
+  left: 0;
+  transition: .3s ease-in;
+}
+
+.side-bar .close-icon {
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.side-bar .close-icon:hover {
+  color: #afafaf;
+}
+/* sidebar style ends here */
+
+/* slider styling goes here */
+.slider {
+  max-width: 1100px;
+  display: flex;
+}
+
+.slider .cardo {
+  flex: 1;
+  margin: 0 10px;
+
+}
+
+.slider .cardo .img-div {
+  height: 200px;
+  width: 100%;
+}
+
+.slider .cardo .img-div img {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* slider styling ends here */
+
+
+/* login form begins here */
+.login-form {
+  position: relative;
+  min-height: 240px;
+}
+
+.login-form input {
+  width: 100%;
+  height: 48px;
+  outline: none;
+  margin-bottom: 12px;
+  border: none;
+  border-bottom: 1px solid #1d1d1d;
+  padding-left: 21px;
+}
+
+.login-form input::placeholder {
+  position: absolute;
+  top: 21px;
+}
+
+.login-form .login-icon {
+  position: absolute;
+  top: 18px;
+}
+
+.login-form .showpsw {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-form button {
+  height: 45px;
+  width: 100%;
+} 
+/* login form styling ends here */
